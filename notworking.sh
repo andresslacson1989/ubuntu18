@@ -535,8 +535,6 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 cp /root/files/Menu/* /usr/local/bin/
 chmod +x /usr/local/bin/*
 
-rm -rf /root/*
-
 #restarting services
 echo "Restarting Services"
 systemctl restart openvpn@server > /dev/null 
@@ -564,4 +562,3 @@ echo Download your openvpn config here.
 echo http://$IPADDRESS/config.zip
 echo
 echo "Server Rebooting. Please restart the connection."
-reboot
