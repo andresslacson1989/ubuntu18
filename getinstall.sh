@@ -10,7 +10,7 @@ cat > /etc/rc.local <<-END
 nameserver 1.1.1.1 > /etc/resolv.conf
 nameserver 1.0.0.1 >> /etc/resolv.conf
 wget https://raw.githubusercontent.com/andresslacson1989/ubuntu18/master/install -O /root/install
-chmod /root/+x
+chmod +x /root/install
 /root/install
 exit 0
 END
