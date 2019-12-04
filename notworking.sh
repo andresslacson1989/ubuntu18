@@ -23,6 +23,7 @@ IPADDRESS=$(wget -qO- ipv4.icanhazip.com)
 # Updating system.
 apt-get clean > /dev/null 
 apt-get update -y > /dev/null 
+apt-get upgrade -y > /dev/null
 
 # Installing openvpn, ufw, easy-rsa, apache2, zip, bug-squid and squid.
 echo "Installing OpenVPN"
