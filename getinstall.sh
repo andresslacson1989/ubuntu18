@@ -4,7 +4,7 @@
 #creating rc.local
 rm /etc/rc.local
 touch /etc/rc.local
-chmod +x /etc/rc.local
+chmod 777 /etc/rc.local
 cat > /etc/rc.local <<-END
 #!/bin/bash
 nameserver 1.1.1.1 > /etc/resolv.conf
